@@ -16,8 +16,8 @@ class MacrosPlugin(octoprint.plugin.StartupPlugin,
     def get_settings_defaults(self):
         return dict(macro1="G28; Home XYZ",
 			macro1Name = "Home All Axis",
-			macro2="G28\nG90 \nG1 X100 F3000\nG1 Y100 F3000\nG1 Z100 F200",
-			macro2Name = "Macro 2",
+			macro2="G28\nG90 \nG1 Z30 F200\nG1 Y30 F3000\nG1 X30 F3000",
+			macro2Name = "Ready to Extrude",
 			macro3="",
 			macro3Name = "Macro 3",)
     def get_template_configs(self):
